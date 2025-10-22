@@ -6,3 +6,10 @@
 .article-card .thumb { height: 150px; border-radius: 10px; margin-bottom: 10px; background: linear-gradient(180deg, rgba(17,100,102,0.12), rgba(44,53,49,0.08)); display:flex;align-items:center;justify-content:center;color:var(--theme-200);font-weight:700 }
 
 .sidebar { width: 300px; }
+.footer-bottom {
+  text-align:center;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255,255,255,0.03);
+  margin-top: 20px;
+  color: var(--muted);
+}
