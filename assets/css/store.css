@@ -1,0 +1,18 @@
+/* store.css
+    Per-page styles for store.html
+    Contains store-specific visual tweaks. */
+
+/* Make product thumbnails larger while remaining responsive */
+.product-row { display: flex; gap: 16px; align-items: center; }
+.product-thumb {
+   width: 140px;
+   max-width: 35%;
+   height: auto;
+   border-radius: 8px;
+   object-fit: cover;
+}
+
+@media (max-width: 640px) {
+   .product-row { flex-direction: row; gap: 12px; }
+   .product-thumb { width: 96px; max-width: 30%; }
+}

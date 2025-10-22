@@ -1,0 +1,5 @@
+/* feedback.css
+   Per-page styles for feedback.html
+   Minimal placeholder to avoid 404s. Add feedback-specific rules here. */
+
+.feedback-form { max-width: 720px; }
