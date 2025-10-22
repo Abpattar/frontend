@@ -1,0 +1,57 @@
+/* Signup page stylesheet
+   Imports shared login styles so the visual card/side-panel matches login.
+   Use this file for signup-specific overrides later.
+*/
+
+@import url('login.css');
+
+/* Signup-specific overrides (small, safe adjustments) */
+.login-content form { margin-top: 8px; }
+.login-hero {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(1200px 600px at 10% 30%, rgba(17,100,102,0.1), transparent),
+              linear-gradient(180deg, rgba(17,100,102,0.04), rgba(44,53,49,0.02));
+}
+.login-card {
+  width: 900px;
+  height: 600px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.02));
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(6,16,18,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+  overflow: hidden;
+  display: flex;
+}
+.login-side {
+  width: 250px;
+  background: linear-gradient(180deg,var(--theme-700), var(--theme-900));
+  color: var(--theme-100);
+  padding: 28px 18px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+}
+.input-ghost { width: 50%; padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,0.06); margin-bottom:12px; background: rgba(255,255,255,0.02); color: #e8f4f2; }
+.input-ghost::placeholder { color: rgba(255,255,255,0.6); }
+
+
+.btn-back:hover {
+  background: rgba(255,255,255,0.04);
+  box-shadow: 0 8px 20px rgba(9,30,30,0.3);
+}
+.btn-back {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #f59b25ce;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background .14s, box-shadow .14s;
+   margin-right: 120px;
+}
+.add {
+  color: rgba(255,255,255,0.6);
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}

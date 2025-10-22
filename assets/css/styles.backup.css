@@ -1,0 +1,10 @@
+/* styles.backup.css
+   Backup note: The original large stylesheet was split into:
+   - global.css  (common styles)
+   - login.css   (login page specific)
+   - index.css   (home page specific)
+
+   Keep this file as a pointer. The active `styles.css` now imports `global.css` for backward compatibility.
+*/
+
+@import url('global.css');

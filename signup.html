@@ -3,21 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Sign up — InfoWeb</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Sign up  InfoWeb</title>
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/signup.css">
 </head>
 <body>
-  <main class="auth-hero">
-    <div class="auth-card">
-      <aside class="auth-left">
+  <main class="login-hero">
+    <div class="login-card">
+      <aside class="login-side">
         <div class="iw-badge">IW</div>
-        <h3>Create Account</h3>
-        <p class="muted">Join InfoWeb to save favorites and comment</p>
+        <div class="small">Join InfoWeb</div>
       </aside>
+      <section class="login-content">
+        <div class="login-brand"><h1>InfoWeb</h1></div>
+        <h2>Create an account</h2>
+        <p class="lead">Join InfoWeb to save favorites and comment.</p>
 
-      <section class="auth-right">
-        <h2>Register</h2>
-        <form action="index.html" method="get" class="auth-form">
+        <form action="index.html" method="get">
           <div class="form-field">
             <label class="small">Name</label>
             <input class="input-ghost" type="text" name="name" required>
@@ -30,9 +32,10 @@
             <label class="small">Password</label>
             <input class="input-ghost" type="password" name="password" required>
           </div>
+
           <div class="action-row">
-            <button class="btn btn-theme" type="submit">Create account</button>
-            <a class="btn btn-back" href="login.html">Back to login</a>
+            <button class="btn btn-theme" type="submit" href="index.html">Create account</button>
+            <a class="btn-back" href="login.html">Back to login</a>
           </div>
         </form>
       </section>
@@ -43,7 +46,7 @@
     <div class="container">
       <div class="col">
         <strong>InfoWeb</strong>
-        <p class="muted">Email: info@example.com<br>Phone: +1 555 1234</p>
+        <p class="muted">Email: infoweb@gmail.com<br>Phone: +91 9876543210</p>
       </div>
       <div class="col">
         <h4>Quick Links</h4>
@@ -53,7 +56,16 @@
           <li><a href="terms.html">Terms</a></li>
         </ul>
       </div>
+      <div class="col">
+        <h4>Follow Us</h4>
+        <ul class="social-links">
+          <li><a href="https://www.twitter.com">Twitter</a></li>
+          <li><a href="https://www.facebook.com">Facebook</a></li>
+          <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
+    <p class="add">© 2023 InfoWeb. All rights reserved.</p>
   </footer>
 </body>
 </html>
