@@ -19,20 +19,22 @@
           <h2>Member Login</h2>
           <p class="lead">Enter your credentials to continue to InfoWeb.</p>
 
+        <form action="#" method="post">
           <div class="input-with-icon">
             <div class="icon">User Name/Email</div>
-            <input type="email" placeholder="Username or email" required>
+            <input class="login-email" name="email" type="email" placeholder="Username or email" required>
           </div>
           <br>
           <div class="input-with-icon">
             <div class="icon">Password</div>
-            <input type="password" placeholder="Password" required>
+            <input class="login-password" name="password" type="password" placeholder="Password" required>
           </div>
           <br>
           <div class="auth-actions">
-            <a class="btn-ghost" href="index.html">Login</a> &emsp;
+            <a class="btn-ghost" type="submit" href="index.html">Login</a> &emsp;
             <a class="btn-register" href="signup.html">Register</a>
           </div>
+        </form>
       </section>
     </div>
   </main>

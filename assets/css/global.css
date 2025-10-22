@@ -105,9 +105,13 @@ header.site-header { position: relative; }
   border-radius: 8px;
   text-decoration: none;
   font-weight: 700;
-  box-shadow: 0 6px 20px rgba(10,25,20,0.24);
+  /* replace the bright white glow with a subtle teal-tinted shadow */
+  border: 1px solid rgba(17,100,102,0.12);
+  box-shadow: 0 8px 26px rgba(17,100,102,0.08), inset 0 1px 0 rgba(255,255,255,0.02);
+  transition: filter .12s ease, box-shadow .14s ease, transform .12s ease;
 }
-.btn:hover { filter: brightness(1.06); }
+.btn:hover { filter: brightness(1.04); box-shadow: 0 12px 34px rgba(17,100,102,0.12), inset 0 1px 0 rgba(255,255,255,0.03); transform: translateY(-2px); }
+.btn:focus { outline: none; box-shadow: 0 12px 34px rgba(17,100,102,0.16), inset 0 1px 0 rgba(255,255,255,0.03); }
 
 /* Main layout */
 .main { display: flex; gap: var(--gap); padding: 28px 0; }

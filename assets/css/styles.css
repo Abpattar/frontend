@@ -1,5 +1,0 @@
-/* Lightweight compatibility stylesheet
-   Prefer linking to global.css and page-specific CSS files directly.
-   This file imports global.css so existing pages that link to styles.css continue to work.
-*/
-@import url('global.css');
