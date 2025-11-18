@@ -7,7 +7,30 @@
   <link rel="stylesheet" href="assets/css/global.css">
   </head>
 <body>
-  <header class="site-header"><div class="container"><a class="brand" href="index.html"><span class="logo">IW</span>InfoWeb</a></div></header>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">IW</span>InfoWeb</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="category.html">Categories</a>
+        <a href="search.html">Search</a>
+        <a href="store.html">Store</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <input class="search-input" placeholder="Search articles..." aria-label="Search">
+          <button class="search-btn" aria-label="Search">🔍</button>
+        </div>
+        <a class="login-icon" href="profile.html" title="Profile" aria-label="Profile">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5z" fill="currentColor" opacity="0.95"/>
+            <path d="M3 21c0-3.866 3.582-7 9-7s9 3.134 9 7v1H3v-1z" fill="currentColor" opacity="0.95"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
   <main class="container">
     <article class="card">
       <h1>Microadventures: exploring near home</h1>
